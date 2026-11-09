@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Draft Interiores · Móveis planejados sob medida em Pinhais e Curitiba</title>
+<meta name="description" content="Marcenaria sob medida em Pinhais, atendendo Curitiba e região: cozinhas, dormitórios, closets, painéis de TV, banheiros e condomínios. Medição sem custo e orçamento pelo WhatsApp.">
+<meta name="theme-color" content="#F3EFE8">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Draft Interiores · Móveis planejados sob medida">
+<meta property="og:description" content="Marcenaria própria em Pinhais. Projetos exclusivos para Curitiba e região.">
+<meta property="og:image" content="https://moshikgueta.github.io/draft-interiores/img/estante-tv-carvalho-noite.jpg">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Manrope:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="img/estante-tv-carvalho-noite.jpg">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"HomeAndConstructionBusiness","name":"Draft Interiores","description":"Móveis planejados sob medida","telephone":"+55 41 99119-1126","address":{"@type":"PostalAddress","streetAddress":"Rua Jacarezinho, 1456 - Alto Tarumã","addressLocality":"Pinhais","addressRegion":"PR","addressCountry":"BR"},"areaServed":["Pinhais","Curitiba","São José dos Pinhais","Colombo","Araucária"],"openingHours":["Mo-Fr 08:00-18:00","Sa 08:00-12:00"],"aggregateRating":{"@type":"AggregateRating","ratingValue":"4.9","reviewCount":"8"}}
+</script>
+<style>
+:root{
+  --bg:#F3EFE8; --paper:#FBF9F5; --sand:#E8E1D5;
+  --ink:#1D1B18; --ink-2:#45403A; --muted:#756D63;
+  --line:rgba(29,27,24,.12); --line-2:rgba(29,27,24,.22);
+  --oak:#A8794A; --oak-2:#8C6239; --oak-soft:#EFE3D3;
+  --night:#161513; --night-2:#211F1C; --on-night:#F3EFE8; --on-night-2:#B9B0A4; --night-line:rgba(243,239,232,.13);
+  --wa:#1F8F4E;
+  --serif:"Cormorant Garamond",Georgia,serif; --sans:"Manrope",system-ui,-apple-system,sans-serif;
+  --ease:cubic-bezier(.23,1,.32,1);
+  --shadow:0 1px 2px rgba(29,27,24,.06),0 28px 56px -30px rgba(29,27,24,.45);
+  --z-header:20; --z-float:30; --z-modal:40;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:84px;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 16px/1.65 var(--sans);-webkit-font-smoothing:antialiased;overflow-x:hidden}
+body.locked{overflow:hidden}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit}
+button{font:inherit;color:inherit}
+::selection{background:var(--oak);color:#fff}
+:focus-visible{outline:2px solid var(--oak);outline-offset:3px;border-radius:4px}
+.wrap{width:min(1240px,100% - 48px);margin-inline:auto}
+@media (max-width:600px){.wrap{width:calc(100% - 36px)}}
+h1,h2,h3{font-family:var(--serif);font-weight:500;letter-spacing:-.01em;margin:0;text-wrap:balance}
+.kick{display:inline-flex;align-items:center;gap:12px;font-size:11.5px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:var(--oak-2)}
+.kick::before{content:"";width:30px;height:1px;background:currentColor}
+i.t{font-style:italic;color:var(--oak)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:52px;padding:0 26px;border-radius:999px;border:0;font:600 14.5px var(--sans);letter-spacing:.01em;text-decoration:none;cursor:pointer;transition:background-color .2s ease,color .2s ease,box-shadow .2s ease,transform .12s var(--ease)}
+.btn:active{transform:scale(.97)}
+.btn svg{width:18px;height:18px;flex:none}
+.btn-ink{background:var(--ink);color:var(--paper)}
+@media (hover:hover){.btn-ink:hover{background:#000}}
+.btn-wa{background:var(--wa);color:#fff}
+@media (hover:hover){.btn-wa:hover{background:#187A42}}
+.btn-line{background:transparent;box-shadow:inset 0 0 0 1px var(--line-2)}
+@media (hover:hover){.btn-line:hover{box-shadow:inset 0 0 0 1px var(--ink)}}
+.dark .btn-line{color:var(--on-night);box-shadow:inset 0 0 0 1px rgba(243,239,232,.3)}
+@media (hover:hover){.dark .btn-line:hover{box-shadow:inset 0 0 0 1px var(--on-night)}}
+
+/* header */
+header{position:sticky;top:0;z-index:var(--z-header);background:rgba(243,239,232,.94);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid transparent;transition:border-color .2s ease}
+header.scrolled{border-bottom-color:var(--line)}
+.nav{display:flex;align-items:center;gap:32px;height:74px}
+.brand{display:flex;flex-direction:column;line-height:1;text-decoration:none}
+.brand b{font:600 27px/1 var(--serif);letter-spacing:.01em}
+.brand b span{font-style:italic;font-weight:500;color:var(--oak)}
+.brand small{margin-top:5px;font-size:9.5px;font-weight:600;letter-spacing:.32em;text-transform:uppercase;color:var(--muted)}
+.nav nav{display:flex;gap:26px;margin-left:auto;font-size:14px}
+.nav nav a{text-decoration:none;color:var(--ink-2);transition:color .15s ease}
+@media (hover:hover){.nav nav a:hover{color:var(--oak-2)}}
+.nav .btn{min-height:44px;padding:0 20px;font-size:13.5px}
+@media (max-width:1020px){.nav nav{display:none}.nav .btn{margin-left:auto}}
+@media (max-width:400px){.nav .btn{padding:0 14px;font-size:12.5px}.brand b{font-size:24px}}
+
+/* hero */
+.hero{padding:clamp(36px,6vw,80px) 0 clamp(56px,7vw,96px)}
+.hero-grid{display:grid;grid-template-columns:1fr 1.05fr;gap:64px;align-items:center}
+h1{font-size:clamp(44px,5.6vw,82px);line-height:.98;margin:22px 0 26px}
+.lead{font-size:clamp(16.5px,1.35vw,18.5px);color:var(--ink-2);max-width:32em;margin:0 0 34px;text-wrap:pretty}
+.cta{display:flex;gap:12px;flex-wrap:wrap}
+.trust{display:flex;flex-wrap:wrap;gap:14px 30px;margin-top:40px;padding-top:24px;border-top:1px solid var(--line);font-size:13.5px;color:var(--muted)}
+.trust b{color:var(--ink);font-weight:600}
+.stars{display:inline-flex;gap:2px;color:#C8902E;vertical-align:-2px;margin-right:6px}
+.stars svg{width:15px;height:15px}
+.collage{display:grid;grid-template-columns:1.25fr 1fr;grid-template-rows:1fr 1fr;gap:14px;height:min(640px,72vh);min-height:460px}
+.collage figure{margin:0;position:relative;border-radius:18px;overflow:hidden;box-shadow:var(--shadow);background:var(--sand)}
+.collage figure:first-child{grid-row:span 2}
+.collage img{width:100%;height:100%;object-fit:cover}
+.collage figcaption{position:absolute;left:12px;bottom:12px;padding:6px 12px;border-radius:999px;background:rgba(251,249,245,.92);font-size:12px;color:var(--ink-2)}
+@media (max-width:900px){.hero-grid{grid-template-columns:1fr;gap:40px}.collage{height:auto;min-height:0;aspect-ratio:1/1.05}}
+
+/* ambientes strip */
+.strip{border-block:1px solid var(--line);background:var(--paper)}
+.strip ul{list-style:none;margin:0;padding:18px 0;display:flex;flex-wrap:wrap;gap:10px 34px;justify-content:space-between;font:500 21px/1 var(--serif);color:var(--ink-2)}
+.strip li{display:flex;align-items:center;gap:34px}
+.strip li+li::before{content:"";width:5px;height:5px;border-radius:50%;background:var(--oak);margin-left:-34px;margin-right:-5px;position:relative;left:-15px}
+@media (max-width:700px){.strip ul{justify-content:flex-start;font-size:18px;gap:10px 26px}.strip li+li::before{display:none}}
+
+section{padding:clamp(76px,9vw,128px) 0}
+.sec-head{display:grid;grid-template-columns:1.1fr 1fr;gap:48px;align-items:end;margin-bottom:52px}
+h2{font-size:clamp(40px,5vw,68px);line-height:1;margin-top:16px}
+.sec-head p{margin:0;color:var(--ink-2);justify-self:end;max-width:31em}
+@media (max-width:900px){.sec-head{grid-template-columns:1fr;gap:14px;margin-bottom:36px}.sec-head p{justify-self:start}}
+
+/* portfolio */
+.filters{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:28px}
+.filters button{min-height:42px;padding:0 16px;border:0;border-radius:999px;background:transparent;box-shadow:inset 0 0 0 1px var(--line-2);font-size:14px;cursor:pointer;color:var(--ink-2);transition:background-color .2s ease,color .2s ease,box-shadow .2s ease}
+.filters button small{margin-left:6px;color:var(--muted);font-size:12px;font-variant-numeric:tabular-nums}
+.filters button[aria-pressed=true]{background:var(--ink);color:var(--paper);box-shadow:none}
+.filters button[aria-pressed=true] small{color:var(--on-night-2)}
+@media (hover:hover){.filters button[aria-pressed=false]:hover{box-shadow:inset 0 0 0 1px var(--ink)}}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.card{display:block;width:100%;padding:0;border:0;background:none;text-align:left;cursor:pointer}
+.card .ph{position:relative;aspect-ratio:4/5;border-radius:16px;overflow:hidden;background:var(--sand)}
+.card img{width:100%;height:100%;object-fit:cover;transition:transform .9s var(--ease)}
+@media (hover:hover){.card:hover img{transform:scale(1.04)}}
+.card .n{position:absolute;top:12px;right:12px;padding:5px 10px;border-radius:999px;background:rgba(22,21,19,.62);color:#fff;font-size:12px;font-variant-numeric:tabular-nums}
+.card .meta{display:flex;justify-content:space-between;align-items:baseline;gap:12px;padding:14px 2px 0}
+.card h3{font-size:26px;line-height:1.1}
+.card .loc{font-size:12.5px;letter-spacing:.06em;color:var(--muted);white-space:nowrap}
+.card .cat{display:block;margin-top:3px;font-size:12.5px;color:var(--oak-2)}
+.card[hidden]{display:none}
+@media (max-width:900px){.grid{grid-template-columns:1fr 1fr;gap:16px}.card h3{font-size:22px}.card .meta{flex-direction:column;gap:2px}}
+@media (max-width:520px){.grid{grid-template-columns:1fr}}
+
+/* luz (dia/noite) */
+.dark{background:var(--night);color:var(--on-night)}
+.dark .kick{color:#D2A574}
+.dark i.t{color:#D9AE7E}
+.dark .sec-head p{color:var(--on-night-2)}
+.luz-grid{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+.luz{position:relative;border-radius:20px;overflow:hidden;background:var(--night-2);box-shadow:0 0 0 1px var(--night-line)}
+.luz .imgs{position:relative;height:min(64vh,620px);min-height:380px}
+.luz .imgs img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:opacity .7s ease}
+.luz .imgs img.night{opacity:0}
+.luz.on .imgs img.night{opacity:1}
+.luz .bar{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:18px 22px}
+.luz h3{font-size:27px}
+.luz p{margin:2px 0 0;font-size:14px;color:var(--on-night-2)}
+.switch{flex:none;display:inline-flex;align-items:center;gap:10px;min-height:44px;padding:0 6px 0 16px;border:0;border-radius:999px;background:rgba(243,239,232,.08);box-shadow:inset 0 0 0 1px var(--night-line);cursor:pointer;font-size:13.5px;font-weight:600;color:var(--on-night)}
+.switch .k{position:relative;width:46px;height:28px;border-radius:999px;background:#3A3631;transition:background-color .25s ease}
+.switch .k::after{content:"";position:absolute;top:3px;left:3px;width:22px;height:22px;border-radius:50%;background:#F3EFE8;transition:transform .25s var(--ease)}
+.luz.on .switch .k{background:#D9A55E}
+.luz.on .switch .k::after{transform:translateX(18px)}
+.luz-note{margin:26px 0 0;color:var(--on-night-2);max-width:52em}
+@media (max-width:760px){.luz-grid{grid-template-columns:1fr}.luz .bar{flex-direction:column;align-items:flex-start}}
+
+/* por que */
+.why{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--line);border-left:1px solid var(--line)}
+.why div{padding:30px 28px 34px;border-right:1px solid var(--line);border-bottom:1px solid var(--line)}
+.why svg{width:26px;height:26px;color:var(--oak);margin-bottom:18px}
+.why h3{font-size:27px;line-height:1.05;margin-bottom:8px}
+.why p{margin:0;font-size:14.5px;color:var(--ink-2)}
+@media (max-width:900px){.why{grid-template-columns:1fr 1fr}}
+@media (max-width:560px){.why{grid-template-columns:1fr}.why div{padding:24px 20px 28px}}
+
+/* processo */
+.proc{background:var(--paper);border-block:1px solid var(--line)}
+.proc-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:64px;align-items:start}
+.proc-grid figure{margin:0;position:sticky;top:110px}
+.proc-grid figure img{width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:18px;box-shadow:var(--shadow)}
+.proc-grid figcaption{margin-top:12px;font-size:13px;color:var(--muted)}
+.steps{list-style:none;margin:0;padding:0;counter-reset:s}
+.steps li{counter-increment:s;display:grid;grid-template-columns:64px 1fr;gap:18px;padding:24px 0;border-bottom:1px solid var(--line)}
+.steps li:first-child{padding-top:0}
+.steps li::before{content:counter(s,decimal-leading-zero);font:500 40px/1 var(--serif);color:var(--oak)}
+.steps h3{font-size:28px;line-height:1.1;margin-bottom:4px}
+.steps p{margin:0;color:var(--ink-2);font-size:15px}
+@media (max-width:900px){.proc-grid{grid-template-columns:1fr;gap:36px}.proc-grid figure{position:static;max-width:520px}}
+
+/* sobre */
+.about{display:grid;grid-template-columns:.85fr 1.15fr;gap:72px;align-items:center}
+.about figure{margin:0;position:relative}
+.about figure img{width:100%;aspect-ratio:4/4.4;object-fit:cover;object-position:top;border-radius:20px;box-shadow:var(--shadow)}
+.about figcaption{position:absolute;left:16px;right:16px;bottom:16px;display:flex;justify-content:space-between;align-items:center;gap:12px;padding:14px 18px;border-radius:14px;background:rgba(251,249,245,.95)}
+.about figcaption b{font:600 22px/1 var(--serif)}
+.about figcaption span{font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--muted)}
+.about .quote{font:italic 500 clamp(28px,3vw,40px)/1.15 var(--serif);color:var(--oak-2);margin:20px 0 22px}
+.about p{color:var(--ink-2);max-width:36em;margin:0 0 16px}
+.tl{list-style:none;margin:30px 0 0;padding:0;display:grid;grid-template-columns:repeat(5,1fr);gap:12px}
+.tl li{border-top:1px solid var(--line-2);padding-top:12px}
+.tl b{display:block;font:600 24px/1 var(--serif);color:var(--oak-2)}
+.tl span{display:block;margin-top:6px;font-size:13px;color:var(--ink-2);line-height:1.4}
+@media (max-width:900px){.about{grid-template-columns:1fr;gap:36px}.about figure{max-width:460px}.tl{grid-template-columns:repeat(3,1fr)}}
+@media (max-width:520px){.tl{grid-template-columns:1fr 1fr}}
+
+/* depoimentos */
+.dep{background:var(--paper);border-block:1px solid var(--line)}
+.score{display:flex;align-items:center;gap:16px;margin-bottom:32px}
+.score b{font:600 64px/1 var(--serif)}
+.score .stars svg{width:20px;height:20px}
+.score span{display:block;font-size:14px;color:var(--muted)}
+.qs{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.q{margin:0;padding:30px;border-radius:18px;background:var(--bg);box-shadow:0 0 0 1px var(--line);display:flex;flex-direction:column}
+.q blockquote{margin:14px 0 22px;font:500 24px/1.3 var(--serif);flex:1}
+.q figcaption{font-size:14px;font-weight:600}
+.q figcaption span{display:block;font-weight:400;color:var(--muted);font-size:13px}
+@media (max-width:900px){.qs{grid-template-columns:1fr}}
+
+/* orçamento */
+.orc{display:grid;grid-template-columns:.9fr 1.1fr;gap:64px;align-items:start}
+.orc .side p{color:var(--ink-2);margin:18px 0 0;max-width:30em}
+.orc .side ul{list-style:none;margin:26px 0 0;padding:0;display:grid;gap:10px}
+.orc .side li{display:flex;gap:12px;font-size:15px}
+.orc .side li::before{content:"";flex:none;width:18px;height:10px;margin-top:6px;border-left:1.5px solid var(--oak);border-bottom:1.5px solid var(--oak);transform:rotate(-45deg) scale(.8)}
+form.quote{background:var(--paper);border-radius:22px;padding:34px;box-shadow:var(--shadow),0 0 0 1px var(--line)}
+fieldset{border:0;margin:0 0 24px;padding:0}
+legend,.lbl{display:block;margin-bottom:10px;font-size:12px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+.opts{display:flex;flex-wrap:wrap;gap:8px}
+.opts label{position:relative;cursor:pointer}
+.opts input{position:absolute;opacity:0;width:1px;height:1px}
+.opts span{display:inline-flex;align-items:center;min-height:42px;padding:0 15px;border-radius:999px;box-shadow:inset 0 0 0 1px var(--line-2);font-size:14px;transition:background-color .15s ease,color .15s ease,box-shadow .15s ease}
+.opts input:checked+span{background:var(--ink);color:var(--paper);box-shadow:none}
+.opts input:focus-visible+span{outline:2px solid var(--oak);outline-offset:2px}
+@media (hover:hover){.opts span:hover{box-shadow:inset 0 0 0 1px var(--ink)}}
+.row2{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.field{display:block;margin-bottom:22px}
+.field input,.field select{display:block;width:100%;height:50px;padding:0 14px;border-radius:12px;border:1px solid var(--line-2);background:#fff;font:400 16px var(--sans);color:var(--ink);transition:border-color .15s ease,box-shadow .15s ease}
+.field input:focus,.field select:focus{outline:none;border-color:var(--oak);box-shadow:0 0 0 3px rgba(168,121,74,.18)}
+form.quote .btn{width:100%}
+.form-note{margin:12px 0 0;font-size:13px;color:var(--muted);text-align:center}
+.err{display:none;margin:-12px 0 16px;font-size:13.5px;color:#A3361F}
+.err.show{display:block}
+@media (max-width:900px){.orc{grid-template-columns:1fr;gap:36px}form.quote{padding:24px 20px}}
+@media (max-width:480px){.row2{grid-template-columns:1fr;gap:0}}
+
+/* faq */
+.faq{max-width:880px}
+details{border-top:1px solid var(--line-2)}
+details:last-child{border-bottom:1px solid var(--line-2)}
+summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:20px;min-height:44px;padding:20px 0;font:500 25px/1.2 var(--serif)}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";flex:none;font:300 26px var(--sans);color:var(--oak);transition:transform .25s var(--ease)}
+details[open] summary::after{transform:rotate(45deg)}
+details p{margin:0 0 24px;color:var(--ink-2);max-width:46em}
+
+/* contato */
+.contact{display:grid;grid-template-columns:1.2fr 1fr 1fr;gap:40px;margin-top:10px}
+.contact h3{font:600 12px var(--sans);letter-spacing:.16em;text-transform:uppercase;color:#D2A574;margin-bottom:12px}
+.contact p{margin:0;color:var(--on-night-2);line-height:1.8}
+.contact a{color:var(--on-night)}
+.final h2{max-width:13ch}
+.final .cta{margin-top:30px}
+footer{background:var(--night);color:var(--on-night-2);border-top:1px solid var(--night-line);padding:26px 0 calc(36px + env(safe-area-inset-bottom));font-size:13px}
+footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+@media (max-width:900px){.contact{grid-template-columns:1fr;gap:26px}}
+
+/* whatsapp flutuante */
+.wa-float{position:fixed;right:18px;bottom:calc(18px + env(safe-area-inset-bottom));z-index:var(--z-float);display:grid;place-items:center;width:58px;height:58px;border-radius:50%;background:var(--wa);color:#fff;box-shadow:0 16px 30px -10px rgba(0,0,0,.45);transition:transform .2s var(--ease),opacity .2s ease}
+.wa-float svg{width:28px;height:28px}
+body.locked .wa-float{display:none}
+.wa-float.hide{opacity:0;transform:scale(.8);pointer-events:none}
+@media (hover:hover){.wa-float:hover{transform:scale(1.05)}}
+
+/* lightbox */
+dialog.lb{width:min(1120px,100% - 32px);max-height:min(92vh,900px);margin:auto;padding:0;border:0;border-radius:22px;background:var(--paper);color:var(--ink);box-shadow:0 40px 100px -30px rgba(0,0,0,.6);overflow:hidden}
+dialog.lb::backdrop{background:rgba(16,15,13,.72)}
+dialog.lb[open]{animation:lbIn .28s var(--ease)}
+@keyframes lbIn{from{opacity:0;transform:translateY(12px) scale(.985)}to{opacity:1;transform:none}}
+.lb-in{display:grid;grid-template-columns:1.15fr .85fr;max-height:min(92vh,900px)}
+.lb-media{position:relative;background:#111;display:flex;flex-direction:column;min-height:0}
+.lb-track{flex:1;display:flex;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;min-height:0}
+.lb-track::-webkit-scrollbar{display:none}
+.lb-track img{flex:0 0 100%;width:100%;height:min(92vh,900px);object-fit:contain;scroll-snap-align:center}
+.lb-nav{position:absolute;top:50%;translate:0 -50%;display:grid;place-items:center;width:44px;height:44px;border:0;border-radius:50%;background:rgba(251,249,245,.92);cursor:pointer;color:var(--ink);font-size:20px;transition:opacity .2s ease}
+.lb-nav:disabled{opacity:0;pointer-events:none}
+.lb-prev{left:12px}.lb-next{right:12px}
+.lb-dots{position:absolute;left:0;right:0;bottom:14px;display:flex;justify-content:center;gap:6px}
+.lb-dots i{width:7px;height:7px;border-radius:50%;background:rgba(255,255,255,.4);transition:background-color .2s ease}
+.lb-dots i.on{background:#fff}
+.lb-info{padding:34px 32px;overflow-y:auto}
+.lb-close{position:absolute;top:14px;right:14px;z-index:2;display:grid;place-items:center;width:44px;height:44px;border:0;border-radius:50%;background:var(--bg);cursor:pointer;font-size:22px;line-height:1}
+.lb-info .cat{font-size:12px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--oak-2)}
+.lb-info h3{font-size:38px;line-height:1.05;margin:10px 0 4px;padding-right:40px}
+.lb-info .loc{font-size:13.5px;color:var(--muted)}
+.lb-info p.d{color:var(--ink-2);margin:18px 0 22px;font-size:15px}
+.lb-info h4{margin:0 0 10px;font-size:11.5px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--muted)}
+.mats{list-style:none;margin:0 0 22px;padding:0}
+.mats li{padding:8px 0;border-top:1px solid var(--line);font-size:14.5px}
+.sw{display:flex;flex-wrap:wrap;gap:12px;margin-bottom:22px}
+.sw span{display:flex;align-items:center;gap:8px;font-size:13.5px}
+.sw i{width:22px;height:22px;border-radius:50%;box-shadow:inset 0 0 0 1px rgba(0,0,0,.12)}
+.dets{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:26px}
+.dets div{padding:12px 14px;border-radius:12px;background:var(--bg)}
+.dets small{display:block;font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+.dets b{font-weight:600;font-size:14.5px}
+.lb-info .btn{width:100%}
+@media (max-width:860px){
+  dialog.lb{width:100%;max-width:100%;height:100%;max-height:100%;border-radius:0}
+  .lb-in{grid-template-columns:1fr;max-height:none;height:100%;overflow-y:auto}
+  .lb-in{display:block}
+  .lb-media{display:block;height:62vh}
+  .lb-track{height:100%}
+  .lb-track img{height:100%}
+  .lb-info{padding:24px 20px calc(30px + env(safe-area-inset-bottom));overflow:visible}
+  .lb-close{position:fixed}
+}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition-duration:.01ms!important;animation-duration:.01ms!important}}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="#" aria-label="Draft Interiores, início"><b>Draft <span>Interiores</span></b><small>Móveis planejados</small></a>
+    <nav aria-label="Seções">
+      <a href="#projetos">Projetos</a>
+      <a href="#luz">Iluminação</a>
+      <a href="#processo">Processo</a>
+      <a href="#sobre">Sobre</a>
+      <a href="#depoimentos">Depoimentos</a>
+      <a href="#faq">Dúvidas</a>
+    </nav>
+    <a class="btn btn-ink" href="#orcamento">Pedir orçamento</a>
+  </div>
+</header>
+
+<main>
+  <section class="hero" aria-label="Apresentação">
+    <div class="wrap hero-grid">
+      <div>
+        <span class="kick">Marcenaria sob medida · Pinhais e Curitiba</span>
+        <h1>Móveis que parecem ter <i class="t">nascido</i> com a casa.</h1>
+        <p class="lead">Cozinhas, dormitórios, closets, painéis e banheiros desenhados para o seu espaço, produzidos na nossa marcenaria e instalados pela nossa própria equipe. Do primeiro contato à última regulagem de porta, é o mesmo cuidado.</p>
+        <div class="cta">
+          <a class="btn btn-wa" data-wa href="#orcamento"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm4.5 12.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.3-.4.8-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6a2.7 2.7 0 0 0 1.8-1.2 2.2 2.2 0 0 0 .1-1.3c0-.1-.2-.2-.5-.3Z"/></svg>Orçamento no WhatsApp</a>
+          <a class="btn btn-line" href="#projetos">Ver projetos</a>
+        </div>
+        <div class="trust">
+          <span><span class="stars" aria-hidden="true"></span><b>4,9</b> no Google · 8 avaliações</span>
+          <span><b>Medição</b> sem custo</span>
+          <span><b>Equipe própria</b> de montagem</span>
+        </div>
+      </div>
+      <div class="collage">
+        <figure><img src="img/estante-tv-carvalho-noite.jpg" alt="Estante de TV em carvalho com LED embutido aceso à noite" width="787" height="1400" fetchpriority="high"><figcaption>Estante de TV · Curitiba</figcaption></figure>
+        <figure><img src="img/sm/cozinha-azul-01.jpg" alt="Cozinha corredor planejada em azul fosco" width="405" height="720"><figcaption>Cozinha azul fosco</figcaption></figure>
+        <figure><img src="img/sm/banheiro-grafite-led.jpg" alt="Banheiro com gabinete grafite e armário-espelho iluminado" width="510" height="720"><figcaption>Banheiro com LED</figcaption></figure>
+      </div>
+    </div>
+  </section>
+
+  <div class="strip" aria-label="Ambientes que projetamos">
+    <div class="wrap"><ul><li>Cozinhas</li><li>Dormitórios</li><li>Closets</li><li>Salas e painéis</li><li>Banheiros</li><li>Home office</li><li>Condomínios</li></ul></div>
+  </div>
+
+  <section id="projetos">
+    <div class="wrap">
+      <div class="sec-head">
+        <div><span class="kick">Projetos entregues</span><h2>Obras reais, feitas na <i class="t">nossa</i> marcenaria.</h2></div>
+        <p>Todas as fotos são de projetos executados pela Draft em Curitiba, Pinhais e região. Toque em um projeto para ver as fotos, os materiais e as cores.</p>
+      </div>
+      <div class="filters" id="filters" role="group" aria-label="Filtrar por ambiente"></div>
+      <div class="grid" id="grid"></div>
+    </div>
+  </section>
+
+  <section id="luz" class="dark">
+    <div class="wrap">
+      <div class="sec-head">
+        <div><span class="kick">Iluminação planejada</span><h2>Acenda a luz e veja a <i class="t">diferença</i>.</h2></div>
+        <p>O LED é desenhado junto com o móvel, embutido em perfis e sancas, com a fiação prevista antes da instalação. De dia, madeira e acabamento. À noite, o ambiente muda de clima.</p>
+      </div>
+      <div class="luz-grid">
+        <div class="luz">
+          <div class="imgs"><img src="img/dormitorio-penteadeira-dia.jpg" alt="Penteadeira suspensa com painel de carvalho durante o dia" width="1050" height="1400" loading="lazy"><img class="night" src="img/dormitorio-penteadeira-noite.jpg" alt="A mesma penteadeira à noite, com espelho e arandela acesos" width="1050" height="1400" loading="lazy"></div>
+          <div class="bar"><div><h3>Penteadeira com espelho de LED</h3><p>Dormitório · Curitiba</p></div><button class="switch" type="button" aria-pressed="false"><span data-lbl>Acender a luz</span><span class="k" aria-hidden="true"></span></button></div>
+        </div>
+        <div class="luz">
+          <div class="imgs"><img src="img/estante-tv-carvalho.jpg" alt="Estante de TV em carvalho e off-white durante o dia" width="787" height="1400" loading="lazy"><img class="night" src="img/estante-tv-carvalho-noite.jpg" alt="A mesma estante à noite, com sanca de LED acesa" width="787" height="1400" loading="lazy"></div>
+          <div class="bar"><div><h3>Estante com sanca de LED</h3><p>Sala · Curitiba</p></div><button class="switch" type="button" aria-pressed="false"><span data-lbl>Acender a luz</span><span class="k" aria-hidden="true"></span></button></div>
+        </div>
+      </div>
+      <p class="luz-note">Espelhos iluminados, nichos com fita de LED, spots direcionáveis e iluminação indireta de contorno: tudo entra no projeto 3D, com a posição de cada ponto combinada com você.</p>
+    </div>
+  </section>
+
+  <section id="diferenciais">
+    <div class="wrap">
+      <div class="sec-head">
+        <div><span class="kick">Por que a Draft</span><h2>Precisão do primeiro contato à <i class="t">última regulagem</i>.</h2></div>
+        <p>Somos uma fábrica de móveis planejados que trata cada projeto como único, porque nenhum espaço é igual ao outro.</p>
+      </div>
+      <div class="why">
+        <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21c1.5-4 4.5-6 8-6s6.5 2 8 6"/></svg><h3>Fala direto com quem faz</h3><p>Você conversa com o Marcos, que desenha, acompanha a produção e a montagem do seu móvel.</p></div>
+        <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M3 21h18M5 21V8l7-5 7 5v13"/><path d="M9 21v-6h6v6"/></svg><h3>Marcenaria própria</h3><p>Produção interna com controle de qualidade em cada peça, sem terceirizar o seu projeto.</p></div>
+        <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M3 7h18M3 7v10a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V7M3 7l2-3h14l2 3M8 11h8"/></svg><h3>Projeto 3D exclusivo</h3><p>Nada de catálogo. Você vê o ambiente em 3D, com cores, materiais e iluminação, antes de produzir.</p></div>
+        <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M4 17 17 4l3 3L7 20H4z"/><path d="m14 7 3 3"/></svg><h3>Medição milimétrica</h3><p>Levantamento técnico no local, sem custo, que garante o encaixe perfeito de cada módulo.</p></div>
+        <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M6 3h12v18l-6-4-6 4z"/></svg><h3>Orçamento aberto</h3><p>Materiais, ferragens e acabamentos descritos item por item, sem custo escondido no final.</p></div>
+        <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M12 3 4 6v6c0 4.5 3.4 8 8 9 4.6-1 8-4.5 8-9V6z"/><path d="m9 12 2 2 4-4"/></svg><h3>Garantia e assistência</h3><p>Garantia na marcenaria, nas ferragens e na montagem, com ajustes e regulagens depois da entrega.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="processo" class="proc">
+    <div class="wrap proc-grid">
+      <figure><img src="img/oficina-dobradicas.jpg" alt="Portas com dobradiças invisíveis sendo preparadas na oficina da Draft Interiores" width="1050" height="1400" loading="lazy"><figcaption>Portas com dobradiças invisíveis na nossa oficina.</figcaption></figure>
+      <div>
+        <span class="kick">Processo</span>
+        <h2 style="margin-bottom:36px">Seis etapas até o seu <i class="t">ambiente pronto</i>.</h2>
+        <ol class="steps">
+          <li><div><h3>Contato</h3><p>Você conta o que precisa pelo WhatsApp e já manda fotos ou a planta, se tiver.</p></div></li>
+          <li><div><h3>Visita</h3><p>Conhecemos o ambiente, o seu estilo e como você usa cada espaço.</p></div></li>
+          <li><div><h3>Medição</h3><p>Levantamento técnico preciso no local, milímetro por milímetro, sem custo.</p></div></li>
+          <li><div><h3>Projeto 3D e orçamento</h3><p>Desenho exclusivo, materiais, cores e iluminação, com orçamento detalhado item por item.</p></div></li>
+          <li><div><h3>Produção</h3><p>Fabricação na nossa marcenaria, com controle de qualidade em cada peça.</p></div></li>
+          <li><div><h3>Instalação</h3><p>Montagem pela equipe própria, com piso protegido, regulagem final e limpeza ao terminar.</p></div></li>
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  <section id="sobre">
+    <div class="wrap about">
+      <figure><img src="img/marcos.jpg" alt="Marcos Rodrigues, fundador da Draft Interiores" width="1100" height="1192" loading="lazy"><figcaption><b>Marcos Rodrigues</b><span>Fundador</span></figcaption></figure>
+      <div>
+        <span class="kick">Quem faz</span>
+        <h2>Você fala direto com <i class="t">quem faz</i>.</h2>
+        <p class="quote">“Elegância sem pedir licença.”</p>
+        <p>A Draft Interiores nasceu do desejo de fazer móveis planejados de outro jeito: sem catálogo pronto e sem promessa genérica. Cada projeto começa com uma conversa e uma medição precisa, e termina com um ambiente que une função e design.</p>
+        <p>O Marcos acompanha cada etapa, do desenho à última regulagem de porta. É esse olhar único que sustenta o padrão de acabamento da Draft em Pinhais, Curitiba e região.</p>
+        <ol class="tl" aria-label="Trajetória">
+          <li><b>2018</b><span>Primeiros projetos em Pinhais</span></li>
+          <li><b>2020</b><span>Marcenaria própria</span></li>
+          <li><b>2022</b><span>Equipe de montagem própria</span></li>
+          <li><b>2024</b><span>Halls e áreas de condomínio</span></li>
+          <li><b>2025</b><span>Curitiba e região</span></li>
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  <section id="depoimentos" class="dep">
+    <div class="wrap">
+      <div class="sec-head">
+        <div><span class="kick">Depoimentos</span><h2>Quem já recebeu a Draft <i class="t">em casa</i>.</h2></div>
+        <div class="score" style="justify-self:end;margin:0"><b>4,9</b><div><span class="stars" aria-hidden="true"></span><span>8 avaliações no Google</span></div></div>
+      </div>
+      <div class="qs">
+        <figure class="q"><span class="stars" aria-label="5 estrelas"></span><blockquote>“Móveis com muita qualidade e totalmente personalizados. Gostei e super indico.”</blockquote><figcaption>Franciele Cirino<span>Cliente residencial</span></figcaption></figure>
+        <figure class="q"><span class="stars" aria-label="5 estrelas"></span><blockquote>“Gostei do atendimento personalizado, da flexibilidade no momento da montagem. Eu indico o trabalho do Marcos.”</blockquote><figcaption>Milena Belarmino<span>Cliente residencial</span></figcaption></figure>
+        <figure class="q"><span class="stars" aria-label="5 estrelas"></span><blockquote>“Excelente atendimento, orçamento justo e entrega no prazo. Recomendo.”</blockquote><figcaption>Alex Augusto Cordeiro<span>Cliente residencial</span></figcaption></figure>
+      </div>
+    </div>
+  </section>
+
+  <section id="orcamento">
+    <div class="wrap orc">
+      <div class="side">
+        <span class="kick">Orçamento</span>
+        <h2>Comece o seu projeto em <i class="t">um minuto</i>.</h2>
+        <p>Responda algumas perguntas rápidas e a mensagem chega pronta no WhatsApp do Marcos. Assim o primeiro retorno já vem certeiro.</p>
+        <ul>
+          <li>Medição no local sem custo</li>
+          <li>Orçamento detalhado e sem compromisso</li>
+          <li>Atendimento de segunda a sábado</li>
+        </ul>
+      </div>
+      <form class="quote" id="quoteForm" novalidate>
+        <fieldset>
+          <legend>Quais ambientes?</legend>
+          <div class="opts" id="ambOpts"></div>
+        </fieldset>
+        <p class="err" id="ambErr" role="alert">Escolha pelo menos um ambiente.</p>
+        <fieldset>
+          <legend>Em que fase está?</legend>
+          <div class="opts">
+            <label><input type="radio" name="fase" value="Imóvel pronto, quero mobiliar" checked><span>Imóvel pronto</span></label>
+            <label><input type="radio" name="fase" value="Imóvel em obra ou reforma"><span>Em obra ou reforma</span></label>
+            <label><input type="radio" name="fase" value="Já tenho projeto de arquiteto"><span>Tenho projeto de arquiteto</span></label>
+          </div>
+        </fieldset>
+        <div class="row2">
+          <label class="field"><span class="lbl">Seu nome</span><input name="nome" autocomplete="name" placeholder="Como podemos te chamar?"></label>
+          <label class="field"><span class="lbl">Cidade ou bairro</span><input name="local" autocomplete="address-level2" placeholder="Ex.: Pinhais, Bacacheri"></label>
+        </div>
+        <label class="field"><span class="lbl">Para quando?</span>
+          <select name="prazo"><option>Sem pressa, quero planejar</option><option>Nos próximos 3 meses</option><option>O quanto antes</option></select>
+        </label>
+        <button class="btn btn-wa" type="submit"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm4.5 12.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.3-.4.8-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6a2.7 2.7 0 0 0 1.8-1.2 2.2 2.2 0 0 0 .1-1.3c0-.1-.2-.2-.5-.3Z"/></svg>Enviar pelo WhatsApp</button>
+        <p class="form-note">Nada é salvo no site: a mensagem abre no seu WhatsApp para você revisar e enviar.</p>
+      </form>
+    </div>
+  </section>
+
+  <section id="faq" class="dep">
+    <div class="wrap">
+      <div class="sec-head" style="margin-bottom:24px"><div><span class="kick">Dúvidas</span><h2>Perguntas <i class="t">frequentes</i>.</h2></div></div>
+      <div class="faq" id="faqList"></div>
+    </div>
+  </section>
+
+  <section id="contato" class="dark final">
+    <div class="wrap">
+      <span class="kick">Contato</span>
+      <h2>Vamos desenhar o seu <i class="t">próximo ambiente</i>?</h2>
+      <div class="cta">
+        <a class="btn btn-wa" data-wa href="#orcamento"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm4.5 12.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.3-.4.8-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6a2.7 2.7 0 0 0 1.8-1.2 2.2 2.2 0 0 0 .1-1.3c0-.1-.2-.2-.5-.3Z"/></svg>Falar com o Marcos</a>
+        <a class="btn btn-line" href="https://www.instagram.com/draft.interiores/" target="_blank" rel="noopener">Instagram</a>
+      </div>
+      <div class="contact" style="margin-top:64px">
+        <div><h3>Marcenaria</h3><p>Rua Jacarezinho, 1456<br>Alto Tarumã, Pinhais · PR<br><a href="https://www.google.com/maps/search/?api=1&query=Rua+Jacarezinho+1456+Alto+Tarum%C3%A3+Pinhais+PR" target="_blank" rel="noopener">Abrir no mapa ↗</a></p></div>
+        <div><h3>Horário</h3><p>Segunda a sexta · 8h às 18h<br>Sábado · 8h às 12h</p></div>
+        <div><h3>Fale com a gente</h3><p><a href="tel:+5541991191126">(41) 99119-1126</a><br>Curitiba, Pinhais, São José dos Pinhais, Colombo, Araucária e região</p></div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer><div class="wrap"><span>© <span data-year></span> Draft Interiores · Móveis planejados sob medida</span><span>Pinhais · Curitiba · PR</span></div></footer>
+
+<a class="wa-float" data-wa href="#orcamento" aria-label="Falar no WhatsApp"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm4.5 12.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.3-.4.8-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6a2.7 2.7 0 0 0 1.8-1.2 2.2 2.2 0 0 0 .1-1.3c0-.1-.2-.2-.5-.3Z"/></svg></a>
+
+<dialog class="lb" id="lb" aria-labelledby="lbTitle">
+  <button class="lb-close" type="button" id="lbClose" aria-label="Fechar">×</button>
+  <div class="lb-in">
+    <div class="lb-media">
+      <div class="lb-track" id="lbTrack" tabindex="0" aria-label="Fotos do projeto"></div>
+      <button class="lb-nav lb-prev" type="button" id="lbPrev" aria-label="Foto anterior">‹</button>
+      <button class="lb-nav lb-next" type="button" id="lbNext" aria-label="Próxima foto">›</button>
+      <div class="lb-dots" id="lbDots" aria-hidden="true"></div>
+    </div>
+    <div class="lb-info">
+      <span class="cat" id="lbCat"></span>
+      <h3 id="lbTitle"></h3>
+      <span class="loc" id="lbLoc"></span>
+      <p class="d" id="lbDesc"></p>
+      <h4>Materiais</h4><ul class="mats" id="lbMats"></ul>
+      <h4>Cores</h4><div class="sw" id="lbColors"></div>
+      <div class="dets" id="lbDets"></div>
+      <a class="btn btn-wa" id="lbWa" target="_blank" rel="noopener">Quero um projeto assim</a>
+    </div>
+  </div>
+</dialog>
+
+<script>
+/* ========= DADOS DA DRAFT (edite aqui) ========= */
+const SITE = { phone: "5541991191126" };
+const CATS = [
+  { slug:"cozinhas", name:"Cozinhas" }, { slug:"dormitorios", name:"Dormitórios" }, { slug:"closets", name:"Closets" },
+  { slug:"salas", name:"Salas e painéis" }, { slug:"banheiros", name:"Banheiros" }, { slug:"condominio", name:"Condomínio" }
+];
+const PROJECTS = [
+  { id:"cozinha-azul-fosco", title:"Cozinha Azul Fosco", cat:"cozinhas", loc:"Pinhais, PR", year:"2025", imgs:["cozinha-azul-01","cozinha-azul-02","cozinha-azul-03"],
+    desc:"Cozinha corredor planejada de ponta a ponta em azul fosco, com aéreos até o teto, prateleira embutida sobre a bancada e nichos internos amadeirados. O aproveitamento vertical liberou toda a circulação e integrou a área de serviço ao mesmo desenho.",
+    mats:["MDF azul fosco 18 mm","Nichos internos amadeirados","Pistões a gás nos basculantes"], colors:[["Azul Fosco","#2C3550"],["Carvalho Natural","#A9793F"],["Preto Granito","#1A1A1A"]], dets:[["Tipo","Cozinha corredor"],["Destaque","Aéreos até o teto"]] },
+  { id:"dormitorio-penteadeira", title:"Dormitório com Penteadeira", cat:"dormitorios", loc:"Curitiba, PR", year:"2025", imgs:["dormitorio-completo","dormitorio-penteadeira-dia","dormitorio-penteadeira-noite"],
+    desc:"Dormitório completo: cabeceira amadeirada com sanca iluminada, criados-mudos suspensos, guarda-roupa off-white de piso a teto e penteadeira suspensa com estrutura metálica preta. A iluminação do espelho e a arandela dourada dão o tom no fim do dia.",
+    mats:["Painel em MDF lâmina de carvalho","Tampo off-white","Estrutura metálica preta"], colors:[["Carvalho Claro","#B08A5E"],["Off-white","#F1EDE6"],["Preto","#171717"]], dets:[["Peça","Painel + penteadeira"],["Destaque","Espelho com LED"]] },
+  { id:"estante-tv-carvalho", title:"Estante de TV Carvalho", cat:"salas", loc:"Curitiba, PR", year:"2025", imgs:["estante-tv-carvalho-noite","estante-tv-carvalho"],
+    desc:"Estante de parede inteira em carvalho e off-white, com nichos verticais laterais, fundo amadeirado atrás da TV, sanca de LED e armários baixos com puxador cava. À noite, a iluminação embutida transforma o ambiente.",
+    mats:["MDF lâmina de carvalho","Off-white acetinado","Fita de LED em perfil embutido"], colors:[["Carvalho Natural","#B98F5C"],["Off-white","#EFEAE1"]], dets:[["Extensão","4,2 m"],["Destaque","Nichos + LED indireto"]] },
+  { id:"closet-iluminado", title:"Guarda-roupa Grafite", cat:"closets", loc:"Alto Tarumã, Pinhais", year:"2025", imgs:["guarda-roupa-cinza-interno"],
+    desc:"Guarda-roupa de piso a teto em grafite fosco com interior branco: prateleiras reguláveis, cabideiros duplos, gaveteiro em bloco e puxadores verticais embutidos. O interior claro deixa tudo visível de uma só vez.",
+    mats:["MDF grafite fosco 18 mm","Interior branco","Puxadores verticais embutidos"], colors:[["Grafite","#57595B"],["Branco","#F2F2F0"]], dets:[["Módulos","3 portas + gaveteiro"],["Destaque","Piso a teto"]] },
+  { id:"banheiro-grafite-led", title:"Banheiro Grafite com LED", cat:"banheiros", loc:"Curitiba, PR", year:"2025", imgs:["banheiro-grafite-led"],
+    desc:"Gabinete suspenso em grafite fosco com tampo em superfície clara, porta-papel embutido na lateral e iluminação de LED por baixo. Acima, armário-espelho com nichos internos iluminados que aproveitam toda a parede sobre a bancada.",
+    mats:["MDF grafite fosco resistente à umidade","Tampo em superfície clara","Perfis de LED embutidos"], colors:[["Grafite","#3C3F42"],["Branco Gelo","#EDEDEA"],["Preto Matte","#141414"]], dets:[["Tipo","Banheiro social"],["Destaque","Armário-espelho iluminado"]] },
+  { id:"sala-painel-tv", title:"Painel de TV Ripado", cat:"salas", loc:"Curitiba, PR", year:"2025", imgs:["painel-tv-ripado"],
+    desc:"Painel de parede em lâmina de carvalho claro com ripado lateral do piso ao teto e rack branco suspenso com gavetas e nicho central. Toda a passagem de cabos foi prevista antes da instalação.",
+    mats:["Lâmina de carvalho claro","Ripado vertical sob medida","Rack branco com gavetas"], colors:[["Carvalho Claro","#D8BC93"],["Branco Neve","#F7F5F1"]], dets:[["Extensão","3,6 m"],["Destaque","Ripado até o teto"]] },
+  { id:"banheiro-ripado-led", title:"Lavabo Ripado com LED", cat:"banheiros", loc:"Curitiba, PR", year:"2025", imgs:["banheiro-ripado-led","lavabo-ripado-armario"],
+    desc:"Lavabo com painel ripado e iluminação em LED contornando o espelho, prateleiras suspensas e bancada em madeira com cuba preta de sobrepor. Marcenaria desenhada para um nicho estreito, sem perder nenhum centímetro.",
+    mats:["Ripado com perfil de LED embutido","Bancada amadeirada","Prateleiras suspensas"], colors:[["Off-white","#EFEAE2"],["Madeira Clara","#C9A276"],["Preto","#141414"]], dets:[["Tipo","Lavabo"],["Destaque","LED em torno do espelho"]] },
+  { id:"guarda-roupa-infantil", title:"Guarda-roupa Infantil", cat:"closets", loc:"Curitiba, PR", year:"2025", imgs:["guarda-roupa-infantil"],
+    desc:"Guarda-roupa de canto para quarto de bebê em off-white com moldura amadeirada: torre de prateleiras abertas para livros e brinquedos, cabideiro na altura das roupinhas, gaveteiro em bloco e nichos escalonados. Portas sem puxador aparente para segurança e visual limpo.",
+    mats:["MDF off-white acetinado","Moldura em lâmina de carvalho","Corrediças com amortecimento"], colors:[["Off-white","#F2EDE6"],["Carvalho Claro","#C49A67"]], dets:[["Tipo","Guarda-roupa de canto"],["Destaque","Nichos abertos + cabideiro baixo"]] },
+  { id:"painel-tv-cinza-madeira", title:"Painel de TV Cinza e Madeira", cat:"salas", loc:"Pinhais, PR", year:"2024", imgs:["painel-tv-cinza-madeira","painel-tv-led-spots"],
+    desc:"Painel de TV combinando lâmina amadeirada e cinza fosco, com prateleira superior iluminada por spots direcionáveis e rack suspenso com gavetas e nicho aberto para os equipamentos.",
+    mats:["Lâmina amadeirada","Cinza fosco","Spots direcionáveis embutidos"], colors:[["Nogueira","#8B5E3C"],["Cinza Fosco","#7C7F82"]], dets:[["Extensão","2,2 m"],["Destaque","Spots na prateleira"]] },
+  { id:"condominio-hall", title:"Hall de Condomínio", cat:"condominio", loc:"Pinhais, PR", year:"2024", imgs:["hall-corporativo","oficina-dobradicas"],
+    desc:"Hall de acesso de condomínio revestido em lâmina escura com iluminação indireta de contorno, painéis alinhados milimetricamente e portas com dobradiças invisíveis produzidas na nossa oficina.",
+    mats:["Painéis em lâmina escura","Perfis de LED indireto","Dobradiças invisíveis 3D"], colors:[["Amêndoa","#C9A97A"],["Cinza Concreto","#8A8A88"]], dets:[["Área","Hall + acessos"],["Destaque","Marcenaria de recepção"]] },
+  { id:"armario-tampo-madeira", title:"Armário com Tampo de Madeira", cat:"cozinhas", loc:"Pinhais, PR", year:"2025", imgs:["armario-tampo-madeira"],
+    desc:"Armário suspenso de duas portas em off-white com desenho tipo shaker e tampo em madeira maciça de carvalho. Peça compacta feita para um vão específico, fixada sem pés para facilitar a limpeza do piso.",
+    mats:["MDF off-white com moldura shaker","Tampo em carvalho maciço","Fixação suspensa em barra metálica"], colors:[["Off-white","#EFE9E1"],["Carvalho Natural","#B98A50"]], dets:[["Tipo","Armário auxiliar suspenso"],["Destaque","Tampo em madeira maciça"]] }
+];
+const AMBIENTES = ["Cozinha","Dormitório","Closet","Sala / painel de TV","Banheiro","Home office","Área de serviço","Condomínio / comercial"];
+const FAQS = [
+  ["Como funciona o orçamento?","O primeiro contato é pelo WhatsApp. Entendemos o que você precisa, agendamos uma visita ou recebemos a planta do seu ambiente e, a partir disso, elaboramos um orçamento detalhado e sem compromisso, com materiais, ferragens e acabamentos descritos item por item."],
+  ["Quanto tempo demora?","Não trabalhamos com um prazo fixo, porque cada projeto tem um escopo diferente. O tempo depende do tamanho do ambiente, da complexidade da marcenaria e dos materiais escolhidos. Depois da medição, apresentamos uma estimativa realista, combinada por escrito antes do início da produção."],
+  ["Vocês fazem a medição?","Sim. A medição técnica é feita pela nossa equipe no local, sem custo adicional, e é a base de todo o projeto. É esse levantamento que garante o encaixe perfeito dos móveis."],
+  ["Os móveis são personalizados?","Totalmente. Cada projeto é desenhado do zero para o seu espaço, sua rotina e seu estilo, desde a altura das gavetas até o tipo de puxador e a iluminação interna."],
+  ["Existe garantia?","Sim. Oferecemos garantia sobre a marcenaria, as ferragens e a montagem, com assistência para ajustes e regulagens após a instalação."],
+  ["Como funciona a instalação?","A montagem é feita pela nossa própria equipe, com proteção do piso e limpeza no final. Combinamos data e horário com antecedência e cuidamos de cada detalhe do alinhamento e da regulagem das portas."],
+  ["Atendem Curitiba e região?","Sim. Atendemos Curitiba, Pinhais, São José dos Pinhais, Colombo, Araucária e demais cidades da região metropolitana. Para outras localidades do Paraná, consulte pelo WhatsApp."],
+  ["Posso escolher os materiais?","Claro. Você escolhe as cores, os padrões amadeirados, o tipo de tampo, as ferragens e a iluminação. Apresentamos amostras e orientamos sobre durabilidade e custo de cada opção."]
+];
+/* =============================================== */
+
+const $ = s => document.querySelector(s), $$ = s => [...document.querySelectorAll(s)];
+const esc = s => String(s).replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const wa = msg => "https://wa.me/" + SITE.phone + "?text=" + encodeURIComponent(msg);
+const DEFAULT_MSG = "Olá, Marcos! Vim pelo site da Draft Interiores e gostaria de um orçamento de móveis planejados.";
+const reduce = matchMedia("(prefers-reduced-motion: reduce)").matches;
+const STAR = '<svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg>';
+$$(".stars").forEach(s => s.innerHTML = STAR.repeat(5));
+$$("[data-year]").forEach(e => e.textContent = new Date().getFullYear());
+$$("[data-wa]").forEach(a => { a.href = wa(DEFAULT_MSG); a.target = "_blank"; a.rel = "noopener"; });
+
+/* portfólio */
+const catName = slug => (CATS.find(c => c.slug === slug) || {}).name || "";
+$("#grid").innerHTML = PROJECTS.map((p, i) => `
+  <button class="card" type="button" data-i="${i}" data-cat="${p.cat}" aria-haspopup="dialog">
+    <div class="ph"><img src="img/sm/${p.imgs[0]}.jpg" alt="${esc(p.title)}, ${esc(p.loc)}" loading="lazy" width="540" height="720">${p.imgs.length > 1 ? `<span class="n">${p.imgs.length} fotos</span>` : ""}</div>
+    <div class="meta"><div><h3>${esc(p.title)}</h3><span class="cat">${catName(p.cat)}</span></div><span class="loc">${esc(p.loc)}</span></div>
+  </button>`).join("");
+const counts = c => PROJECTS.filter(p => !c || p.cat === c).length;
+$("#filters").innerHTML = [`<button type="button" data-f="" aria-pressed="true">Todos<small>${counts()}</small></button>`]
+  .concat(CATS.filter(c => counts(c.slug)).map(c => `<button type="button" data-f="${c.slug}" aria-pressed="false">${c.name}<small>${counts(c.slug)}</small></button>`)).join("");
+$("#filters").addEventListener("click", e => {
+  const b = e.target.closest("button"); if (!b) return;
+  $$("#filters button").forEach(x => x.setAttribute("aria-pressed", x === b));
+  $$("#grid .card").forEach(c => c.hidden = !!b.dataset.f && c.dataset.cat !== b.dataset.f);
+});
+
+/* lightbox */
+const lb = $("#lb"), track = $("#lbTrack");
+let cur = null, opener = null;
+function slideIdx(){ return Math.round(track.scrollLeft / Math.max(1, track.clientWidth)); }
+function syncNav(){ const n = cur.imgs.length, i = slideIdx();
+  $("#lbPrev").disabled = i <= 0; $("#lbNext").disabled = i >= n - 1;
+  $$("#lbDots i").forEach((d, k) => d.classList.toggle("on", k === i)); }
+function openProject(i, from){
+  cur = PROJECTS[i]; opener = from;
+  track.innerHTML = cur.imgs.map((f, k) => `<img src="img/${f}.jpg" alt="${esc(cur.title)}, foto ${k + 1} de ${cur.imgs.length}" ${k ? 'loading="lazy"' : ""}>`).join("");
+  $("#lbDots").innerHTML = cur.imgs.length > 1 ? cur.imgs.map(() => "<i></i>").join("") : "";
+  $("#lbCat").textContent = catName(cur.cat) + " · " + cur.year;
+  $("#lbTitle").textContent = cur.title; $("#lbLoc").textContent = cur.loc; $("#lbDesc").textContent = cur.desc;
+  $("#lbMats").innerHTML = cur.mats.map(m => `<li>${esc(m)}</li>`).join("");
+  $("#lbColors").innerHTML = cur.colors.map(([n, h]) => `<span><i style="background:${h}"></i>${esc(n)}</span>`).join("");
+  $("#lbDets").innerHTML = cur.dets.map(([l, v]) => `<div><small>${esc(l)}</small><b>${esc(v)}</b></div>`).join("");
+  $("#lbWa").href = wa(`Olá, Marcos! Vi o projeto "${cur.title}" no site da Draft Interiores e quero algo parecido. Pode me passar um orçamento?`);
+  lb.showModal(); document.body.classList.add("locked"); track.scrollLeft = 0; syncNav();
+  history.replaceState(null, "", "#projeto-" + cur.id);
+}
+function closeLb(){ lb.close(); }
+lb.addEventListener("close", () => { document.body.classList.remove("locked"); history.replaceState(null, "", location.pathname + location.search); opener && opener.focus(); });
+$("#grid").addEventListener("click", e => { const c = e.target.closest(".card"); if (c) openProject(+c.dataset.i, c); });
+$("#lbClose").onclick = closeLb;
+lb.addEventListener("click", e => { if (e.target === lb) closeLb(); });
+const go = d => track.scrollTo({ left: (slideIdx() + d) * track.clientWidth, behavior: reduce ? "auto" : "smooth" });
+$("#lbPrev").onclick = () => go(-1); $("#lbNext").onclick = () => go(1);
+track.addEventListener("scroll", () => requestAnimationFrame(syncNav), { passive: true });
+lb.addEventListener("keydown", e => { if (e.key === "ArrowRight") { e.preventDefault(); go(1); } if (e.key === "ArrowLeft") { e.preventDefault(); go(-1); } });
+const deep = location.hash.match(/^#projeto-(.+)$/);
+if (deep) { const i = PROJECTS.findIndex(p => p.id === deep[1]); if (i >= 0) openProject(i, null); }
+
+/* luz dia/noite */
+$$(".luz").forEach(card => {
+  const b = card.querySelector(".switch");
+  b.addEventListener("click", () => {
+    const on = !card.classList.contains("on"); card.classList.toggle("on", on);
+    b.setAttribute("aria-pressed", on); b.querySelector("[data-lbl]").textContent = on ? "Apagar a luz" : "Acender a luz";
+  });
+});
+/* acende sozinho a primeira vez que aparece (só para quem não pediu menos movimento) */
+if (!reduce && "IntersectionObserver" in window) {
+  const io = new IntersectionObserver(es => es.forEach(e => {
+    if (!e.isIntersecting) return; io.unobserve(e.target);
+    setTimeout(() => { const c = e.target; if (!c.dataset.touched && !c.classList.contains("on")) c.querySelector(".switch").click(); }, 900);
+  }), { threshold: .45 });
+  $$(".luz").forEach(c => { c.querySelector(".switch").addEventListener("pointerdown", () => c.dataset.touched = 1); io.observe(c); });
+}
+
+/* orçamento */
+$("#ambOpts").innerHTML = AMBIENTES.map(a => `<label><input type="checkbox" name="amb" value="${esc(a)}"><span>${esc(a)}</span></label>`).join("");
+$("#quoteForm").addEventListener("submit", e => {
+  e.preventDefault();
+  const f = e.target, ambs = [...f.querySelectorAll("[name=amb]:checked")].map(x => x.value);
+  if (!ambs.length) { $("#ambErr").classList.add("show"); f.querySelector("[name=amb]").focus(); return; }
+  $("#ambErr").classList.remove("show");
+  const nome = f.nome.value.trim(), local = f.local.value.trim();
+  const msg = [
+    `Olá, Marcos! ${nome ? "Sou " + nome + ". " : ""}Vim pelo site da Draft Interiores e quero um orçamento.`,
+    "", `*Ambientes:* ${ambs.join(", ")}`, `*Fase:* ${f.fase.value}`, local ? `*Local:* ${local}` : "", `*Prazo:* ${f.prazo.value}`
+  ].filter((l, i) => l || i === 1).join("\n");
+  window.open(wa(msg), "_blank", "noopener");
+});
+$("#ambOpts").addEventListener("change", () => $("#ambErr").classList.remove("show"));
+
+/* faq */
+$("#faqList").innerHTML = FAQS.map(([q, a]) => `<details><summary>${esc(q)}</summary><p>${esc(a)}</p></details>`).join("");
+
+/* header + botão flutuante */
+const hd = $("header"), fl = $(".wa-float"), orc = $("#orcamento"), ct = $("#contato");
+function onScroll(){ hd.classList.toggle("scrolled", scrollY > 10);
+  const near = el => { const r = el.getBoundingClientRect(); return r.top < innerHeight && r.bottom > 0; };
+  fl.classList.toggle("hide", scrollY < 400 || near(orc) || near(ct)); }
+addEventListener("scroll", onScroll, { passive: true }); onScroll();
+</script>
+</body>
+</html>
